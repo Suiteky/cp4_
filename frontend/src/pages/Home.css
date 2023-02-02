@@ -1,0 +1,40 @@
+#root {
+  background-color: green;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  height: 100%;
+}
+
+.home {
+  height: 100%;
+}
+
+.begin {
+  background-color: red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BeginMiddle {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Middle {
+  background-color: blue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

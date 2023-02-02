@@ -1,36 +1,26 @@
-import Counter from "../components/Counter";
-import logo from "../assets/logo.svg";
+import React from "react";
+import ReactDOM from "react-dom";
+import { Carousel } from "react-responsive-carousel";
+import Beginning from "../components/Beginning";
+import BeginMiddle from "../components/BeginMiddle";
+import Middle from "../components/Middle";
+import "./Home.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 export default function Home() {
   return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>Hello Vite + React !</p>
-
-      <Counter />
-
-      <p>
-        Edit <code>App.jsx</code> and save to test HMR updates.
-      </p>
-      <p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        {" | "}
-        <a
-          className="App-link"
-          href="https://vitejs.dev/guide/features.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Vite Docs
-        </a>
-      </p>
-    </header>
+    <div className="home">
+      <Carousel>
+        <div className="begin">
+          <Beginning />
+        </div>
+        <div className="BeginMiddle">
+          <BeginMiddle />
+        </div>
+        <div className="Middle">
+          <Middle />
+        </div>
+      </Carousel>
+    </div>
   );
 }
